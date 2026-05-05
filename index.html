@@ -3,51 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jones Day Professorship of Commercial Law Lecture 2026</title>
+  <title>Jones Day Professorship of Commercial Law Lecture 2026 | SMU Microsites</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
       color: #333;
-      line-height: 1.6;
+      line-height: 1.42857;
       background: #fff;
     }
 
-    .banner {
+    a { color: #003d6b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      z-index: 100;
+    }
+
+    .header-two {
+      position: relative;
+      background: #fff;
+      padding: 10px 0;
+    }
+    .header-two .container {
+      display: flex;
+      align-items: center;
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .site-branding {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .ob-smu-logo img {
+      height: 60px;
+      width: auto;
+    }
+    .ob-oblique {
+      margin: 0 -10px;
+    }
+    .ob-oblique img {
+      height: 70px;
+      width: auto;
+    }
+    .ob-bu-logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .header-subheader {
+      margin-left: auto;
+      font-size: 16px;
+      color: #003d6b;
+      font-weight: 400;
+      text-align: right;
+      line-height: 1.3;
+    }
+    .header-subheader a {
+      color: #003d6b;
+      text-decoration: none;
+    }
+
+    /* ===== NAV BAR ===== */
+    .header-main-nav {
+      background: #003d6b;
+    }
+    .header-main-nav .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .header-main-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+    .header-main-nav li a,
+    .header-main-nav li .nav-cta {
+      display: block;
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 13px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .header-main-nav li a:hover {
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+    }
+    .header-main-nav li.nav-cta-item {
+      margin-left: auto;
+    }
+    .header-main-nav li.nav-cta-item a {
+      background: #c5a44e;
+      color: #fff;
+      font-weight: 600;
+    }
+    .header-main-nav li.nav-cta-item a:hover {
+      background: #b8963f;
+    }
+
+    /* ===== BANNER ===== */
+    .homepage-banner {
       position: relative;
       width: 100%;
-      max-height: 600px;
       overflow: hidden;
     }
-    .banner img {
+    .homepage-banner img {
       width: 100%;
       height: auto;
       display: block;
-      object-fit: cover;
-      max-height: 600px;
     }
 
-    .container {
-      max-width: 900px;
+    /* ===== CONTENT SECTIONS ===== */
+    .content-container {
+      max-width: 940px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 15px;
     }
 
-    .section {
-      padding: 40px 0;
-      border-bottom: 1px solid #eee;
-    }
-    .section:last-child {
-      border-bottom: none;
+    .page-section {
+      padding: 50px 0;
+      text-align: center;
     }
 
     .section-header h2 {
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 22px;
       font-weight: 600;
       color: #003d6b;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
@@ -62,118 +161,189 @@
     .section-content {
       text-align: center;
     }
-
     .section-content p {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.6;
     }
 
-    .text-align-justify {
+    /* Organisers logos */
+    .organisers-logos {
+      text-align: center;
+    }
+    .organisers-logos img {
+      vertical-align: middle;
+      max-width: 100%;
+      height: auto;
+    }
+    .organisers-logos .logos-main {
+      max-width: 546px;
+      height: auto;
+    }
+    .organisers-logos .logo-nus {
+      max-width: 349px;
+      height: auto;
+    }
+
+    /* Synopsis */
+    .synopsis-content h3 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+    .synopsis-content p {
       text-align: justify;
     }
-
-    .text-align-center {
-      text-align: center;
-    }
-
-    .align-center {
-      text-align: center;
-    }
-
-    .logos-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .logos-row img {
-      height: 94px;
-      width: auto;
-    }
-
-    .synopsis ol {
+    .synopsis-content ol {
       list-style-type: lower-roman;
       padding-left: 72px;
       text-align: left;
+      margin-bottom: 10px;
     }
-    .synopsis ol li p {
-      text-align: justify;
-    }
-    .synopsis h3 {
-      text-align: center;
-      margin-bottom: 16px;
-    }
-    .synopsis p {
+    .synopsis-content ol li p {
       text-align: justify;
     }
 
-    .register-btn {
-      display: inline-block;
-      background: #003d6b;
-      color: #fff;
-      padding: 14px 48px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 4px;
-      margin: 10px 0 16px;
-      transition: background 0.2s;
+    /* Registration */
+    .register-link {
+      color: #003d6b;
+      text-decoration: underline;
+      font-style: italic;
     }
-    .register-btn:hover {
-      background: #c5a44e;
-      color: #fff;
+    .register-link:hover {
+      color: #c5a44e;
     }
 
+    /* CPD badge */
     .cpd-badge {
       max-width: 180px;
       margin: 0 auto 16px;
       display: block;
     }
 
-    .attendance-policy p {
-      text-align: justify;
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: #333;
+      color: #999;
+      padding: 20px 0;
+      font-size: 12px;
+    }
+    .site-footer .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .footer-powered {
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    .footer-powered a {
+      color: #ccc;
+    }
+    .footer-links {
+      margin-bottom: 4px;
+    }
+    .footer-links a {
+      color: #999;
+      margin-right: 4px;
+    }
+    .footer-copyright {
+      color: #999;
     }
 
-    .about-section p {
-      text-align: justify;
-    }
-
-    a { color: #003d6b; }
-
-    @media (max-width: 600px) {
-      .section { padding: 28px 0; }
-      .section-header h2 { font-size: 1.3rem; }
-      .synopsis ol { padding-left: 36px; }
-      .logos-row img { height: 60px; }
-      .banner { max-height: 350px; }
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .header-two .container {
+        flex-wrap: wrap;
+      }
+      .header-subheader {
+        width: 100%;
+        text-align: center;
+        margin: 8px 0 0;
+        font-size: 14px;
+      }
+      .header-main-nav ul {
+        flex-direction: column;
+      }
+      .header-main-nav li.nav-cta-item {
+        margin-left: 0;
+      }
+      .synopsis-content ol {
+        padding-left: 36px;
+      }
+      .ob-smu-logo img { height: 48px; }
+      .ob-bu-logo img { height: 48px; }
+      .ob-oblique img { height: 56px; }
     }
   </style>
 </head>
 <body>
 
-  <div class="banner">
-    <img src="assets/banner.png" alt="Jones Day Professorship of Commercial Law Lecture 2026">
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-two">
+      <div class="container">
+        <div class="site-branding">
+          <div class="ob-smu-logo">
+            <a href="#" title="Singapore Management University (SMU)">
+              <img alt="Singapore Management University (SMU)" src="assets/logo-d-smu.svg">
+            </a>
+          </div>
+          <div class="ob-oblique">
+            <img src="assets/oblique.svg" alt="">
+          </div>
+          <div class="ob-bu-logo">
+            <a href="#" title="Centre for Commercial Law in Asia">
+              <img src="assets/logo-dt-ccla.svg" alt="Centre for Commercial Law in Asia">
+            </a>
+          </div>
+        </div>
+        <div class="header-subheader">
+          Jones Day Professorship of<br>Commercial Law Lecture 2026
+        </div>
+      </div>
+    </div>
+    <div class="header-main-nav">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-organisers">About the Organisers</a></li>
+            <li><a href="#programme">Programme</a></li>
+            <li><a href="#jones-day-professor">Jones Day Professor of Commercial Law</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li class="nav-cta-item"><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== BANNER ===== -->
+  <div id="home" class="homepage-banner">
+    <img src="assets/banner.png" alt="Jones Day Professorship of Commercial Law Lecture 2026 - Three Conceptions of Capitalism">
   </div>
 
-  <!-- Organisers -->
-  <div class="section">
-    <div class="container">
+  <!-- ===== ORGANISERS ===== -->
+  <div id="about-organisers" class="page-section">
+    <div class="content-container">
       <div class="section-header">
         <h2>Organisers</h2>
         <div class="header-gold-line"></div>
       </div>
-      <div class="section-content">
-        <div class="logos-row">
-          <img src="assets/logos.png" alt="SMU CEBCLA and Jones Day Logos">
-          <img src="assets/nus-logo.png" alt="NUS Logo">
-        </div>
+      <div class="section-content organisers-logos">
+        <p>
+          <img class="logos-main" src="assets/logos.png" alt="Jones Day, SMU, Centre for Commercial Law in Asia">
+          <img class="logo-nus" src="assets/nus-logo.png" alt="NUS EW Barker Centre for Law &amp; Business, Faculty of Law">
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- Synopsis -->
-  <div class="section synopsis">
-    <div class="container">
+  <!-- ===== SYNOPSIS ===== -->
+  <div id="programme" class="page-section synopsis-content">
+    <div class="content-container">
       <div class="section-header">
         <h2>Synopsis</h2>
         <div class="header-gold-line"></div>
@@ -181,21 +351,21 @@
       <div class="section-content">
         <h3><strong>Three Conceptions of Capitalism</strong></h3>
         <p>How should we make capitalism work best for society? To this end, what goals should corporate leaders, public officials, and citizens pursue? This lecture seeks to contribute to the long-standing debates on these questions.</p>
-        <p>In the lecture, Professor Lucian A. Bebchuk will examine three rival conceptions that have had substantial traction in the "real world" of politics and business &ndash; those of</p>
+        <p>In the lecture, Professor Lucian A. Bebchuk will examine three rival conceptions that have had substantial traction in the &ldquo;real world&rdquo; of politics and business &ndash; those of</p>
         <ol>
           <li><p>Friedmanesque Capitalism, which supports a corporate maximization of shareholder profits and a limited role for the government,</p></li>
-          <li><p>Managerial Stakeholderism, which advocates encouraging and relying on corporate leaders to use their discretion to serve also stakeholders not only shareholders, and</p></li>
+          <li><p>Managerial Stakeholderism, which advocates encouraging and relying on corporate leaders to use their discretion to serve also stakeholders not only shareholders but, and</p></li>
           <li><p>Democratic Capitalism, which is deeply concerned about corporate externalities but seeks to address them through external governmental interventions and limiting corporate leaders&rsquo; ability to impede such interventions.</p></li>
         </ol>
         <p>The lecture considers what each framework implies for citizens and voters, institutional investors, and policymakers, and how corporate governance debates intersect with broader questions of legitimacy, enforcement, and democratic choice.</p>
-        <p>Professor Bebchuk will also be commenting on attempts based on harnessing the power of investors, using pressures from customers and employees, introducing stakeholder-oriented directors, and requiring corporate leaders to make stakeholder-oriented decisions, explaining why those favoring Democratic Capitalism over Managerial Stakeholderism should not switch to any of these versions of Nonmanagerial Stakeholderism.</p>
+        <p>Professor Bebchuk will also be commenting on attempts based on harnessing the power of investors, power, using pressures from customers and employees, introducing stakeholder-oriented directors, and requiring corporate leaders to make stakeholder-oriented decisions, explaining why those favoring Democratic Capitalism over Managerial Stakeholderism should not switch to any of these versions of Nonmanagerial Stakeholderism.</p>
       </div>
     </div>
   </div>
 
-  <!-- Jones Day Professor -->
-  <div class="section">
-    <div class="container">
+  <!-- ===== JONES DAY PROFESSOR ===== -->
+  <div id="jones-day-professor" class="page-section">
+    <div class="content-container">
       <div class="section-header">
         <h2>Jones Day Professor of Commercial Law</h2>
         <div class="header-gold-line"></div>
@@ -209,9 +379,9 @@
     </div>
   </div>
 
-  <!-- Details -->
-  <div class="section">
-    <div class="container">
+  <!-- ===== DETAILS ===== -->
+  <div class="page-section">
+    <div class="content-container">
       <div class="section-header">
         <h2>Details</h2>
         <div class="header-gold-line"></div>
@@ -228,29 +398,30 @@
     </div>
   </div>
 
-  <!-- Registration -->
-  <div class="section">
-    <div class="container">
+  <!-- ===== REGISTRATION ===== -->
+  <div id="registration" class="page-section">
+    <div class="content-container">
       <div class="section-header">
         <h2>Registration</h2>
         <div class="header-gold-line"></div>
       </div>
       <div class="section-content">
-        <p><a href="GOOGLE_FORM_URL_PLACEHOLDER" class="register-btn">Register Now</a></p>
+        <p><em><a href="GOOGLE_FORM_URL_PLACEHOLDER" class="register-link">Register here</a></em></p>
         <p><em>Registration closes on 25 May 2026, 5pm (SGT) or when maximum capacity is reached, whichever earlier</em></p>
       </div>
     </div>
   </div>
 
-  <!-- SILE CPD -->
-  <div class="section">
-    <div class="container">
+  <!-- ===== SILE CPD ===== -->
+  <div class="page-section">
+    <div class="content-container">
       <div class="section-header">
         <h2>SILE Accredited CPD Activity</h2>
         <div class="header-gold-line"></div>
       </div>
       <div class="section-content">
-        <img class="cpd-badge" src="assets/sile-cpd.png" alt="SILE Accredited CPD Activity">
+        <p>&nbsp;</p>
+        <p><img class="cpd-badge" src="assets/sile-cpd.png" alt="SILE Accredited CPD Activity"></p>
         <p><strong>Public CPD Points</strong>: <strong>1.5 (TBC)</strong></p>
         <p><strong>Practice Area</strong>: Corporate / Commercial</p>
         <p><strong>Training Category</strong>: General</p>
@@ -258,31 +429,50 @@
     </div>
   </div>
 
-  <!-- SILE Attendance Policy -->
-  <div class="section attendance-policy">
-    <div class="container">
+  <!-- ===== SILE ATTENDANCE POLICY ===== -->
+  <div class="page-section">
+    <div class="content-container">
       <div class="section-header">
         <h2>SILE Attendance Policy</h2>
         <div class="header-gold-line"></div>
       </div>
       <div class="section-content">
-        <p class="text-align-justify">Participants who wish to obtain CPD Points are reminded that they must comply strictly with the Attendance Policy set out in the CPD Guidelines. For this activity, this includes signing in on arrival and signing out at the conclusion of the activity in the manner required by the organiser, and not being absent from the entire activity for more than 15 minutes. Participants who do not comply with the Attendance Policy will not be able to obtain CPD Points for attending the activity. Please refer to <a href="http://www.silecpdcentre.sg/" target="_blank" rel="noopener">http://www.sileCPDcentre.sg</a> for more information.</p>
+        <p style="text-align:justify;">Participants who wish to obtain CPD Points are reminded that they must comply strictly with the Attendance Policy set out in the CPD Guidelines. For this activity, this includes signing in on arrival and signing out at the conclusion of the activity in the manner required by the organiser, and not being absent from the entire activity for more than 15 minutes. Participants who do not comply with the Attendance Policy will not be able to obtain CPD Points for attending the activity. Please refer to <a href="http://www.silecpdcentre.sg/" target="_blank" rel="noopener">http://www.sileCPDcentre.sg</a> for more information.</p>
       </div>
     </div>
   </div>
 
-  <!-- About -->
-  <div class="section about-section">
-    <div class="container">
+  <!-- ===== ABOUT ===== -->
+  <div class="page-section">
+    <div class="content-container">
       <div class="section-header">
         <h2>About the Jones Day Professorship of Commercial Law Lecture</h2>
         <div class="header-gold-line"></div>
       </div>
       <div class="section-content">
-        <p class="text-align-justify">The Jones Day Professorship of Commercial Law was established in 2012, made possible by the global law firm Jones Day, which generously endowed the largest ever contribution by any law firm to SMU through the Jones Day Foundation. It will facilitate increased focus on the development of Commercial Law in Singapore, a market which is in continuous development and increasingly plays a global role as a hub for legal services to both regional and international clients in Asia.</p>
+        <p style="text-align:justify;">The Jones Day Professorship of Commercial Law was established in 2012, made possible by the global law firm Jones Day, which generously endowed the largest ever contribution by any law firm to SMU through the Jones Day Foundation. It will facilitate increased focus on the development of Commercial Law in Singapore, a market which is in continuous development and increasingly plays a global role as a hub for legal services to both regional and international clients in Asia.</p>
       </div>
     </div>
   </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container" style="max-width:1170px;margin:0 auto;padding:0 15px;">
+      <div class="footer-powered">
+        <p>Powered by <a href="#" rel="nofollow">SMU Microsite Builder</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms of Use</a> |
+        <a href="#">Privacy Statement</a> |
+        <a href="#">Personal Data Statement</a> |
+        <a href="#">Contact Data Protection Officer</a> |
+        <a href="#">Website Feedback</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; Copyright 2026 Singapore Management University. All Rights Reserved
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
