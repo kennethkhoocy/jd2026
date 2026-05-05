@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme | Jones Day Professorship of Commercial Law Lecture 2026</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/vnd.microsoft.icon">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+      line-height: 1.42857;
+      background: #fff;
+    }
+
+    a { color: #003d6b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      z-index: 100;
+    }
+
+    .header-two {
+      position: relative;
+      background: #fff;
+      padding: 10px 0;
+    }
+    .header-two .container {
+      display: flex;
+      align-items: center;
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .site-branding {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .ob-smu-logo img {
+      height: 60px;
+      width: auto;
+    }
+    .ob-oblique {
+      margin: 0 -10px;
+    }
+    .ob-oblique img {
+      height: 70px;
+      width: auto;
+    }
+    .ob-bu-logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .header-subheader {
+      margin-left: auto;
+      font-size: 16px;
+      color: #003d6b;
+      font-weight: 400;
+      text-align: right;
+      line-height: 1.3;
+    }
+    .header-subheader a {
+      color: #003d6b;
+      text-decoration: none;
+    }
+
+    /* ===== NAV BAR ===== */
+    .header-main-nav {
+      background: #003d6b;
+    }
+    .header-main-nav .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .header-main-nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+    .header-main-nav li a,
+    .header-main-nav li .nav-cta {
+      display: block;
+      color: #fff;
+      padding: 12px 16px;
+      font-size: 13px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: background 0.2s;
+    }
+    .header-main-nav li a:hover {
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+    }
+    .header-main-nav li.active a {
+      background: rgba(255,255,255,0.2);
+      font-weight: 600;
+    }
+    .header-main-nav li.nav-cta-item {
+      margin-left: auto;
+    }
+    .header-main-nav li.nav-cta-item a {
+      background: #c5a44e;
+      color: #fff;
+      font-weight: 600;
+    }
+    .header-main-nav li.nav-cta-item a:hover {
+      background: #b8963f;
+    }
+
+    /* ===== CONTENT SECTIONS ===== */
+    .content-container {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .page-section {
+      padding: 2.5em 0;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      color: #003d6b;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .header-gold-line {
+      width: 50px;
+      height: 5px;
+      background: #8A704C;
+      margin: 0 auto 20px;
+    }
+
+    .section-content {
+      text-align: center;
+    }
+    .section-content p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ===== PROGRAMME TABLE ===== */
+    .programme-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 15px;
+    }
+    .programme-table tr {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .programme-table tr:last-child {
+      border-bottom: none;
+    }
+    .programme-table td {
+      padding: 18px 16px;
+      vertical-align: top;
+      line-height: 1.6;
+    }
+    .programme-table td:first-child {
+      width: 110px;
+      font-weight: 600;
+      color: #003d6b;
+      white-space: nowrap;
+    }
+    .programme-table .event-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .programme-table .event-detail {
+      color: #555;
+      font-size: 13px;
+    }
+    .programme-table .panellist-list {
+      list-style: none;
+      padding: 0;
+      margin: 6px 0 0;
+    }
+    .programme-table .panellist-list li {
+      margin-bottom: 3px;
+      color: #555;
+      font-size: 13px;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: #1c1c1c;
+      color: rgba(255,255,255,0.8);
+      padding: 20px 0;
+      font-size: 12px;
+    }
+    .site-footer .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .footer-powered {
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    .footer-powered a {
+      color: #ccc;
+    }
+    .footer-links {
+      margin-bottom: 4px;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      margin-right: 4px;
+    }
+    .footer-copyright {
+      color: rgba(255,255,255,0.8);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .header-two .container {
+        flex-wrap: wrap;
+      }
+      .header-subheader {
+        width: 100%;
+        text-align: center;
+        margin: 8px 0 0;
+        font-size: 14px;
+      }
+      .header-main-nav ul {
+        flex-direction: column;
+      }
+      .header-main-nav li.nav-cta-item {
+        margin-left: 0;
+      }
+      .ob-smu-logo img { height: 48px; }
+      .ob-bu-logo img { height: 48px; }
+      .ob-oblique img { height: 56px; }
+      .programme-table td:first-child {
+        width: 90px;
+      }
+      .programme-table td {
+        padding: 14px 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-two">
+      <div class="container">
+        <div class="site-branding">
+          <div class="ob-smu-logo">
+            <a href="#" title="Singapore Management University (SMU)">
+              <img alt="Singapore Management University (SMU)" src="assets/logo-d-smu.svg">
+            </a>
+          </div>
+          <div class="ob-oblique">
+            <img src="assets/oblique.svg" alt="">
+          </div>
+          <div class="ob-bu-logo">
+            <a href="#" title="Centre for Commercial Law in Asia">
+              <img src="assets/logo-dt-ccla.svg" alt="Centre for Commercial Law in Asia">
+            </a>
+          </div>
+        </div>
+        <div class="header-subheader">
+          Jones Day Professorship of<br>Commercial Law Lecture 2026
+        </div>
+      </div>
+    </div>
+    <div class="header-main-nav">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html#about-organisers">About the Organisers</a></li>
+            <li class="active"><a href="programme.html">Programme</a></li>
+            <li><a href="jones-day-professor.html">Jones Day Professor of Commercial Law</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li class="nav-cta-item"><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PROGRAMME ===== -->
+  <div class="page-section">
+    <div class="content-container">
+      <div class="section-header">
+        <h2>Programme</h2>
+        <div class="header-gold-line"></div>
+      </div>
+      <div class="section-content">
+        <table class="programme-table">
+          <tr>
+            <td>4:30pm</td>
+            <td>Registration</td>
+          </tr>
+          <tr>
+            <td>5:00pm</td>
+            <td>Welcome Remarks</td>
+          </tr>
+          <tr>
+            <td>5:15pm</td>
+            <td>Introduction of Speaker</td>
+          </tr>
+          <tr>
+            <td>5:20pm</td>
+            <td>
+              <div class="event-title">Lecture: &ldquo;Three Conceptions of Capitalism&rdquo;</div>
+              <div class="event-detail">Professor Lucian A. Bebchuk<br>
+              James Barr Ames Professor of Law, Economics, and Finance<br>
+              Director, Program on Corporate Governance<br>
+              Harvard Law School</div>
+            </td>
+          </tr>
+          <tr>
+            <td>6:00pm</td>
+            <td>
+              <div class="event-title">Panel Discussion and Q&amp;A</div>
+              <div class="event-detail">Panellists:</div>
+              <ul class="panellist-list">
+                <li>Professor Lucian A. Bebchuk (Harvard Law School)</li>
+                <li>Professor Tjio Hans (NUS Faculty of Law)</li>
+                <li>Professor Dan W. Puchniak (SMU Yong Pung How School of Law)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>6:45pm</td>
+            <td>End of Event / Dinner Reception (by Invitation Only)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container" style="max-width:1170px;margin:0 auto;padding:0 15px;">
+      <div class="footer-powered">
+        <p>Powered by <a href="#" rel="nofollow">SMU Microsite Builder</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms of Use</a> |
+        <a href="#">Privacy Statement</a> |
+        <a href="#">Personal Data Statement</a> |
+        <a href="#">Contact Data Protection Officer</a> |
+        <a href="#">Website Feedback</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; Copyright 2026 Singapore Management University. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
