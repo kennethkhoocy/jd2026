@@ -14,12 +14,12 @@
     body {
       font-family: "Open Sans", sans-serif;
       font-size: 14px;
-      color: #333;
-      line-height: 1.42857;
+      color: #000;
+      line-height: 20px;
       background: #fff;
     }
 
-    a { color: #333; text-decoration: none; }
+    a { color: #000; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     /* ===== HEADER ===== */
@@ -141,36 +141,38 @@
       width: 100%;
     }
     .header-main-nav li a {
-      display: block;
+      display: inline-block;
       color: #fff;
       background: transparent;
-      padding: 15px 16px;
-      font-family: "Oswald", sans-serif;
+      padding: 10px 0 6px 0;
+      margin: 0 15px;
+      font-family: "Open Sans", sans-serif;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 700;
       text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
       white-space: nowrap;
-      transition: background 0.2s;
+      border-bottom: 4px solid transparent;
+      transition: border-color 0.2s;
     }
     .header-main-nav li a:hover {
-      background: rgba(255,255,255,0.15);
+      border-bottom-color: rgba(255,255,255,0.5);
       text-decoration: none;
     }
-    .header-main-nav li a.is-active {
-      background: rgba(255,255,255,0.1);
+    .header-main-nav li a.active {
+      border-bottom-color: #fff;
     }
     .header-main-nav li.nav-cta-item {
       margin-left: auto;
+      background: #8a704c;
+      padding: 0 15px;
     }
     .header-main-nav li.nav-cta-item a {
-      background: #8a704c;
-      padding-left: 15px;
-      padding-right: 15px;
+      background: transparent;
+      padding: 10px 0 6px 0;
+      margin: 0;
     }
     .header-main-nav li.nav-cta-item a:hover {
-      background: #7a6342;
+      border-bottom-color: #fff;
     }
 
     /* ===== CONTENT SECTIONS ===== */
@@ -192,12 +194,12 @@
     .section-header h2 {
       text-align: center;
       font-family: "Oswald", sans-serif;
-      font-size: 30px;
-      font-weight: 400;
-      color: #333;
+      font-size: 21px;
+      font-weight: 700;
+      color: #000;
       margin-bottom: 10px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: normal;
     }
 
     .header-gold-line {
@@ -214,9 +216,9 @@
       text-align: center;
     }
     .section-content p {
-      margin-bottom: 10px;
+      margin: 14px 0;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 20px;
     }
 
     /* ===== ABOUT SUBSECTIONS ===== */
@@ -230,7 +232,7 @@
       font-family: "Oswald", sans-serif;
       font-size: 18px;
       font-weight: 600;
-      color: #333;
+      color: #000;
       margin-bottom: 12px;
       text-align: center;
     }
@@ -258,13 +260,13 @@
       opacity: 0.8;
       line-height: 1.2em;
     }
-    .footer-powered a { color: #ccc; }
+    .footer-powered a { color: #fff; }
     .footer-links {
       font-size: 12px;
       margin-bottom: 4px;
       opacity: 0.8;
     }
-    .footer-links a { color: #ccc; margin-right: 4px; }
+    .footer-links a { color: #fff; margin-right: 4px; }
     .footer-copyright {
       font-size: 12px;
       opacity: 0.8;
@@ -286,8 +288,10 @@
         flex-direction: column;
       }
       .header-main-nav li.nav-cta-item {
-        margin-left: 0;
-      }
+      margin-left: auto;
+      background: #8a704c;
+      padding: 0 15px;
+    }
       .ob-smu-logo img { height: 48px; }
       .ob-bu-logo img { height: 48px; }
       .ob-oblique { width: 24px; height: 64px; }
